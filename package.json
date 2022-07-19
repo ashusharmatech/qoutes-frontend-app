@@ -2,6 +2,7 @@
   "name": "qoutes-frontend-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ashusharmatech.github.io/qoutes-frontend-app",
   "dependencies": {
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
@@ -26,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
