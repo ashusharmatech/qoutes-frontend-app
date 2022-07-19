@@ -1,6 +1,9 @@
 # Qoutes Application
 This application shows qoutes from the famous people. 
 
+[![CI](https://github.com/ashusharmatech/qoutes-frontend-app/actions/workflows/ci.yml/badge.svg)](https://github.com/ashusharmatech/qoutes-frontend-app/actions/workflows/ci.yml)
+[![pages-build-deployment](https://github.com/ashusharmatech/qoutes-frontend-app/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ashusharmatech/qoutes-frontend-app/actions/workflows/pages/pages-build-deployment)
+
 
 ## Getting Started
 
