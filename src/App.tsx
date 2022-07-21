@@ -1,22 +1,25 @@
-import {
-  ChakraProvider,
-  Box,
-  VStack,
-  Grid,
-  theme,
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
+import { ChakraProvider, VStack, theme, Flex} from '@chakra-ui/react';
 import Qoute from './Qoute';
 
 export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Qoute></Qoute>
-        </VStack>
-      </Grid>
-    </Box>
-  </ChakraProvider>
-)
+	<ChakraProvider theme={theme}>
+				<Flex
+					w={'full'}
+					h={'100vh'}
+					backgroundImage={
+						'url(https://source.unsplash.com/random)'
+					}
+					backgroundSize={'cover'}
+					backgroundPosition={'center center'}
+				>
+					<VStack
+						w={'full'}
+						justify={'center'}
+						bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
+					>
+						<Qoute></Qoute>
+					</VStack>
+				</Flex>
+
+	</ChakraProvider>
+);
