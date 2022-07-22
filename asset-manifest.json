@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/qoutes-frontend-app/static/js/main.f31d88bd.js",
+    "main.js": "/qoutes-frontend-app/static/js/main.a2523ef9.js",
     "index.html": "/qoutes-frontend-app/index.html",
-    "main.f31d88bd.js.map": "/qoutes-frontend-app/static/js/main.f31d88bd.js.map"
+    "main.a2523ef9.js.map": "/qoutes-frontend-app/static/js/main.a2523ef9.js.map"
   },
   "entrypoints": [
-    "static/js/main.f31d88bd.js"
+    "static/js/main.a2523ef9.js"
   ]
 }
