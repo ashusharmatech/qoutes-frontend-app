@@ -1,4 +1,4 @@
-import { Box, Button, Spinner, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Spinner, Stack, Text, VStack } from '@chakra-ui/react';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
@@ -22,29 +22,37 @@ const Qoute = () => {
 
 	return (
 		<Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-			{isLoading && <Spinner thickness="40px" speed="0.65s" emptyColor="gray.200" color="blue.500" size="6xl" />}
+			{isLoading && <Spinner thickness="40px" speed="2s" emptyColor="pink.200" color="pink.500" size="10xl" />}
 			{!isLoading &&
 			qoute && (
-				<Box>
-					<Text color={'white'} fontWeight={700} lineHeight={1.2} fontSize="6xl">
+				<VStack m={{ base: 4, md: 0 }} gap={6}>
+					<Text
+						color={'white'}
+						fontWeight={{ base: '400', sm: '200', md: '300', lg: '700' }}
+						lineHeight={1.2}
+						fontSize={{ base: '3xl', sm: '3xl', md: '4xl', lg: '6xl' }}
+					>
 						{qoute['quote']}
 					</Text>
-					<Text color={'pink'} fontWeight={700} lineHeight={1} fontSize="4xl">
+					<Text
+						color={'pink'}
+						fontWeight={{ base: '400', sm: '200', md: '300', lg: '700' }}
+						lineHeight={1.2}
+						fontSize={{ base: '3xl', sm: '3xl', md: '4xl', lg: '6xl' }}
+					>
 						{qoute['author']}
 					</Text>
-				</Box>
+					<Button
+						bg={'whiteAlpha.300'}
+						rounded={'full'}
+						color={'white'}
+						_hover={{ bg: 'whiteAlpha.500' }}
+						onClick={getQoute}
+					>
+						Get More!
+					</Button>
+				</VStack>
 			)}
-			<Stack direction={'row'}>
-				<Button
-					bg={'whiteAlpha.300'}
-					rounded={'full'}
-					color={'white'}
-					_hover={{ bg: 'whiteAlpha.500' }}
-					onClick={getQoute}
-				>
-					Show me more
-				</Button>
-			</Stack>
 		</Stack>
 	);
 };
